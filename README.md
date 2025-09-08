@@ -1,12 +1,12 @@
-#Exp-No: 02 - Write and simulate seven segment display using Verilog HDL and verify with testbench
-Aim:
+# #Exp-No: 02 - Write and simulate seven segment display using Verilog HDL and verify with testbench
+# Aim:
 
   To design and simulate a Seven Segment using Verilog HDL and verify its functionality through a testbench using the Vivado 2023.1 simulation environment.
-Apparatus Required:
+# Apparatus Required:
 
   Vivado 2023.1
 
-Procedure:
+# Procedure:
 
 
 Launch Vivado Open Vivado 2023.1 by double-clicking the Vivado icon or searching for it in the Start menu.
@@ -20,10 +20,10 @@ Generate Simulation Report Once the simulation is complete, you can generate a s
 Save and Document Results Save your project by clicking File → Save Project. Take screenshots of the waveform window and include them in your lab report to document your results. You can include the timing diagram from the simulation window showing the correct functionality of the Seven Segment across different select inputs and data inputs.
 Close the Simulation Once done, by going to Simulation → "Close Simulation
 
- Input/Output Signal Diagram:
+# Input/Output Signal Diagram:
 <img width="1919" height="1079" alt="Screenshot 2025-08-29 205623" src="https://github.com/user-attachments/assets/0650de7c-0af6-426e-87d3-b9de479c9784" />
 
-RTL Code:
+# RTL Code:
 ```
 module sevensegment(bcd,seg);
     input [3:0]bcd;
@@ -46,7 +46,7 @@ module sevensegment(bcd,seg);
    end  
 endmodule
 ```
-TestBench:
+# TestBench:
 ```
 module sevensegment_tb;
      reg [3:0] bcd_t;
@@ -76,8 +76,9 @@ module sevensegment_tb;
      end 
 endmodule
 ```
- Output waveform:
+# Output waveform:
 <img width="1919" height="1079" alt="Screenshot 2025-08-29 204307" src="https://github.com/user-attachments/assets/77a94458-bd50-495f-99a2-a684870b5556" />
 
-Conclusion:
+# Conclusion:
+
 in this experiment, a Seven Segment Display driver was successfully designed and simulated using Verilog HDL. The design correctly decoded 4-bit BCD inputs into seven-segment outputs, enabling the display of digits 0–9. The simulation results verified the correct functionality of the display, with all inputs producing the expected segment patterns.
